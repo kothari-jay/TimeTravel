@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>StopWatch</title>
+<head>
+  <link rel="stylesheet" href="styleSheets/bootstrap.min.css">
+  <link rel="stylesheet" href="styleSheets/main.css">
+  <script src="scripts/jquery-3.1.0.js" charset="utf-8"></script>
+  <script src="scripts/bootstrap.bundle.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+
+  <script src="scripts/history.js" charset="utf-8"></script>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <h1>Elapsed Time</h1>
+     <h1 id="demo"></h1>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Elapsed Time</span>
+
+<h2 align="center">History Table</h2>
+<div class="tableBody">
+<table style="width:100%" id="HistoryTable" class="table table-bordered">
+<thead class="thead-dark header-fixed">
+
+  <tr>
+    <th scope="col">SrNo</th>
+    <th scope="col">Start Time</th>
+    <th scope="col">Origin Longitude</th>
+    <th scope="col">Origin Lattitude</th>
+    <th scope="col">Stop Time</th>
+    <th scope="col">Destination Longitude</th>
+    <th scope="col">Destination Lattitude</th>
+    <th scope="col">TotalTime(seconds)</th>
+  </tr>
+
+</thead>
+</table>
+</div>
+<div align="center">
+<button type="button" id="startButton"  class="btn btn-primary btn-lg" onclick="startStopTime();">Start</button>
+<button type="button" class="btn btn-secondary btn-lg" onclick="reset()">Reset</button>
+</div>
+</body>
+</html>
